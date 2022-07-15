@@ -1,0 +1,29 @@
+{
+  "name": "goit-js-hw-11",
+  "version": "1.0.0",
+  "description": "Homework 11",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html --public-url /goit-js-hw-11/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDidgi/goit-js-hw-11.git"
+  },
+  "author": "IgorN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDidgi/goit-js-hw-11/issues"
+  },
+  "homepage": "https://MrDidgi.github.io/goit-js-hw-11",
+  "devDependencies": {
+    "parcel-bundler": "^1.3.1",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
