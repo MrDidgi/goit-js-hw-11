@@ -17,12 +17,6 @@ const randomIntegerFromInterval = (min, max) => {
 // ⚠️ Учти, на кнопку Start можно нажать бесконечное количество раз. Сделай так, чтобы пока изменение темы запушено, кнопка Start была не активна.
 // Для генерации случайного числа (индекс элемента массива цветов), используй функцию randomIntegerFromInterval.
 
-// 1. получить ссылки на кнопки
-// 2. функция смены цвета
-// 3. повесить эвентлисенер
-// 4. повесить setInterval()  1 секунда который запускает функцию смены цвета, кнопка старт становится не активной
-// 5. кнопка стоп которая очищает таймер и возвращает активность кнопке старт
-
 const startButton = document.querySelector('[data-action="start"]');
 const stopButton = document.querySelector('[data-action="stop"]');
 const body = document.querySelector('body');

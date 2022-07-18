@@ -1,1 +1,1 @@
-console.log("test");
+console.log("test it's core app.js script file");
