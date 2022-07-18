@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI","file":"app.dfec7b0c.js","sourceRoot":"..","sourcesContent":["console.log(\"test it's core app.js script file\");"]}
