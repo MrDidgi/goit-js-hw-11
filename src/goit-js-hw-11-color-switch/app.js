@@ -1,3 +1,4 @@
+console.log('color switch test');
 
 const colors = [
     '#FFFFFF',

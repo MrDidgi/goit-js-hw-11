@@ -1,7 +1,8 @@
 // Задание 1
 // Напиши функцию delay(ms), которая возвращает промис, переходящий в состояние "resolved" через ms миллисекунд. 
 // Значением исполнившегося промиса должно быть то кол-во миллисекунд которое передали во время вызова функции delay.
-console.log("test it's promise script file")
+console.log("test it's promise script file"); 
+alert("ALERT");
 
 const delay = ms => {
     
