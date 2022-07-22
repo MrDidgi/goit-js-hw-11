@@ -69,39 +69,30 @@ const delay = ms => {
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
-const delay1 = randomIntegerFromInterval(200, 500);
 
 const makeTransaction = (transaction) => {  
-  
-  const promise = new Promise(function(resolve, reject) {
+  return new Promise(function(resolve, reject) {
+    const delay1 = randomIntegerFromInterval(200, 500);
     setTimeout(() => {
       const canProcess = Math.random() > 0.3;
-
       if (canProcess) {
-        resolve(transaction.id, delay1);
+        resolve({delay1, transaction});
       } else {
         reject(transaction.id);
       }
     }, delay1);
   });
-  return promise;
 };
 
-const logSuccess = (id, delay) => {
-  console.log(`Transaction ${id} processed in ${delay1} ms`);
+const logSuccess = (args) => {
+  const { delay1, transaction, ...other } = args;
+  console.log(`Transaction ${transaction.id} processed in ${delay1}ms`);
 };
 
 const logError = id => {
   console.warn(`Error processing transaction ${id}. Please try again later.`);
 };
 
-/*
- * Работает так
- */
-// makeTransaction({ id: 70, amount: 150 }, logSuccess, logError);
-// makeTransaction({ id: 71, amount: 230 }, logSuccess, logError);
-// makeTransaction({ id: 72, amount: 75 }, logSuccess, logError);
-// makeTransaction({ id: 73, amount: 100 }, logSuccess, logError);
 /*
  * Должно работать так
  */
